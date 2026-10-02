@@ -16,5 +16,5 @@ regenerated and re-zipped. Extract the new zip over the repo, commit, push.
 
 ## Images
 
-- `images/the-historiotheque-building.jpg` — the header image (already in place
+- `images/the-historiotheque-building.png` — the header image (already in place
   once added). Additional images go in `images/` and are referenced by filename.

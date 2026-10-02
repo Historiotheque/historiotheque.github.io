@@ -14,7 +14,7 @@ Published with GitHub Pages at https://historiotheque.github.io (custom domain `
 - `about.html` — the operator, in the first person
 - `404.html` — custom not-found page
 - `css/style.css` — the whole visual design in one file
-- `images/` — site images (header: `the-historiotheque-building.jpg`)
+- `images/` — site images (header: `the-historiotheque-building.png`)
 
 ## Working on the site
 
