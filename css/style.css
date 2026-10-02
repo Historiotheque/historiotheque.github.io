@@ -1,0 +1,173 @@
+/* The Historiotheque — visual design harmonized with the header image:
+   parchment background, stone tones, foliage green, letterpress type. */
+
+:root {
+  --parchment: #f6f1e3;
+  --paper: #fffdf6;
+  --stone: #e7dfc9;
+  --ink: #2b251b;
+  --ink-soft: #5a5142;
+  --moss: #43563f;
+  --clay: #8a6f4d;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--parchment);
+  color: var(--ink);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.wrap {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 3rem;
+}
+
+/* Header */
+
+.site-header {
+  text-align: center;
+  padding: 2.5rem 0 1rem;
+}
+
+.site-title {
+  font-family: 'Special Elite', 'Courier New', monospace;
+  font-size: 2.6rem;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.4rem;
+  color: var(--ink);
+}
+
+.tagline {
+  font-style: italic;
+  color: var(--ink-soft);
+  margin: 0 0 1.75rem;
+}
+
+.hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--clay);
+  outline: 4px solid var(--paper);
+  outline-offset: -9px;
+  box-shadow: 0 2px 14px rgba(43, 37, 27, 0.18);
+}
+
+/* Navigation */
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 1.25rem;
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+  border-top: 1px solid var(--clay);
+  border-bottom: 1px solid var(--clay);
+}
+
+.site-nav a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+  font-size: 1rem;
+}
+
+.site-nav a:hover { color: var(--moss); }
+
+.site-nav a.active {
+  color: var(--ink);
+  border-bottom: 2px solid var(--moss);
+}
+
+/* Content */
+
+main h2 {
+  font-family: 'Special Elite', 'Courier New', monospace;
+  letter-spacing: 0.06em;
+  font-size: 1.6rem;
+  margin-top: 0;
+}
+
+main h3 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: var(--moss);
+}
+
+a { color: var(--moss); }
+a:hover { color: var(--ink); }
+
+/* Project cards */
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 40rem) {
+  .cards { grid-template-columns: 1fr 1fr; }
+}
+
+.card {
+  display: block;
+  background: var(--paper);
+  border: 1px solid var(--stone);
+  border-top: 3px solid var(--moss);
+  padding: 1rem 1.1rem;
+  text-decoration: none;
+  color: var(--ink);
+  box-shadow: 0 1px 6px rgba(43, 37, 27, 0.08);
+}
+
+.card:hover { border-top-color: var(--clay); }
+
+.card strong {
+  display: block;
+  font-family: 'Special Elite', 'Courier New', monospace;
+  letter-spacing: 0.05em;
+  font-size: 1.1rem;
+  margin-bottom: 0.35rem;
+  color: var(--ink);
+}
+
+.card span { color: var(--ink-soft); font-size: 0.98rem; }
+
+/* Lists */
+
+.log-list, .pub-list, .log-teasers {
+  list-style: none;
+  padding: 0;
+}
+
+.log-list li, .pub-list li {
+  background: var(--paper);
+  border: 1px solid var(--stone);
+  border-left: 3px solid var(--moss);
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.log-list li p, .pub-list li p { margin: 0.4rem 0 0; }
+
+.log-teasers li { margin-bottom: 0.9rem; }
+
+/* Footer */
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--clay);
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
